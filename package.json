@@ -1,0 +1,31 @@
+{
+  "name": "tesseract",
+  "version": "1.0.0",
+  "description": "Read text from image",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "mocha *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GalaikoNazar/tesseract.git"
+  },
+  "author": "Galaiko Nazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GalaikoNazar/tesseract/issues"
+  },
+  "homepage": "https://github.com/GalaikoNazar/tesseract#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-handlebars": "^4.0.0",
+    "gulp-util": "^3.0.8",
+    "hbs": "^4.1.0",
+    "nodemon": "^2.0.2",
+    "tesseract.js": "^2.1.1"
+  }
+}

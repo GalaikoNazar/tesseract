@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'JAKARTA';
+  src: url('../fonts/JAKARTA.eot');
+  src: url('../fonts/JAKARTA.eot?#iefix') format('embedded-opentype'), url('../fonts/JAKARTA.woff2') format('woff2'), url('../fonts/JAKARTA.woff') format('woff'), url('../fonts/JAKARTA.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: #000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#loader.active {
+  display: flex;
+}
+* {
+  margin: 0;
+  user-select: none;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'JAKARTA';
+}
+html,
+body {
+  font-size: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  display: inline;
+}
+body {
+  margin: 0%;
+  background: #111113;
+  min-height: 100vh;
+  justify-content: center;
+}
+.fon {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  max-width: 70rem;
+  display: block;
+  margin: 10rem auto 4rem;
+  min-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+.form_title {
+  color: #fff;
+  display: block;
+  font-size: 8rem;
+  text-align: center;
+}
+.form_subtitle {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+.form .upload {
+  display: flex;
+  width: 100%;
+  background: hsla(0, 0%, 100%, 0.46);
+  margin: 4rem auto 1.5rem;
+  padding: 5rem;
+  border-radius: 0.6rem;
+  max-width: 43rem;
+  height: 25rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.form .upload.done {
+  box-shadow: 0px 0px 10px 2px green;
+}
+.form .upload.done ~ .line {
+  pointer-events: auto;
+  top: 0;
+  opacity: 1;
+}
+.form .upload.error {
+  box-shadow: 0px 0px 10px 2px red;
+}
+.form .upload .back {
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  position: absolute;
+  height: 15rem;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+.form .upload input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+.form .text {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.form button {
+  box-shadow: rgba(33, 203, 243, 0.3) 0px 3px 5px 2px;
+  background: linear-gradient(45deg, #2196f3 30%, #21cbf3 90%);
+  color: white;
+  border: 0;
+  height: 48px;
+  margin: 8px;
+  padding: 0 30px;
+  font-size: 1.8rem;
+  line-height: 3.1;
+  border-radius: 3px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 19rem;
+  text-transform: uppercase;
+  margin: 0 2rem;
+}
+.form button.cancel {
+  background: linear-gradient(45deg, red 30%, #FF8E53 90%);
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  width: 13rem;
+}
+.form .line {
+  transition: 0.4s top, 0.4s opacity;
+  position: relative;
+  top: -10rem;
+  opacity: 0;
+  margin: 2rem auto 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review {
+  width: 100%;
+  padding: 2rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  margin: 3rem 0 0 0;
+}
+/*# sourceMappingURL=style.css.map */

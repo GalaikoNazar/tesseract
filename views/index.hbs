@@ -1,0 +1,20 @@
+<div class="form">
+	<h1 class="form_title">Tesseract</h1>
+	<h3 class="form_subtitle">Get text from image</h3>
+	<form action="/upload" method="POST" ref='uploadForm' encType="multipart/form-data">
+		<div class="upload">
+			<img src="/img/picture.svg" alt="" class="back">
+			<input type="file" name="image" onchange="Image.change(this)" required>
+		</div>
+		<p class="text">Format must be: png, jpg, jpeg. And max size 5 mb.</p>
+		<div class="line">
+			<button onclick="loader()">SEND</button>
+			<button type="button" class="cancel" onclick="Image.cancel(this)">cancel</button>
+		</div>
+	</form>
+
+	{{#if text}}
+		<div class="review">{{text}}</div>
+	{{/if}}
+
+</div>
