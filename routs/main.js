@@ -42,7 +42,7 @@ router.post("/upload", (req, res) => {
           path
         );
         console.log(text);
-        File.remove(path);
+        // File.remove(path);
         res.render(`index`, {
           text: text
         });
