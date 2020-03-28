@@ -22,6 +22,11 @@
 	&.active {
 		display: flex;
 	}
+	img {
+		display: block;
+		width: 100%;
+		max-width: 40rem;
+	}
 }
 *{
 	margin: 0;
@@ -37,6 +42,7 @@
 
 html, body {
 	font-size: 10px;
+
 }
 h1,h2,h3,h4,h5 {
 	display: inline;
@@ -65,11 +71,17 @@ body{
 	min-height: 30px;
 	position: relative;
 	z-index: 2;
+	@media(max-width: 650px){
+		padding: 0 15px;
+	}
 	&_title {
 		color: #fff;
 		display: block;
 		font-size: 8rem;
 		text-align: center;
+		@media(max-width: 650px){
+			font-size: 6rem;
+		}
 	}
 	&_subtitle {
 		color: #fff;

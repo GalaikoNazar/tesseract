@@ -20,6 +20,11 @@
 #loader.active {
   display: flex;
 }
+#loader img {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+}
 * {
   margin: 0;
   user-select: none;
@@ -63,11 +68,21 @@ body {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 650px) {
+  .form {
+    padding: 0 15px;
+  }
+}
 .form_title {
   color: #fff;
   display: block;
   font-size: 8rem;
   text-align: center;
+}
+@media (max-width: 650px) {
+  .form_title {
+    font-size: 6rem;
+  }
 }
 .form_subtitle {
   color: #fff;
